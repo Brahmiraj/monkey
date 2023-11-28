@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  background-color: black;
+  color: white;
+}
+.BokorText {
+  font-family: "Bokor";
+}
+.DMSerifText {
+  font-family: 'DM Serif Text';
+}
+.DMSans {
+  font-family: 'DM Sans';
+}
+.NotoSerif {
+  font-family: 'Noto Serif';
+}
