@@ -1,28 +1,66 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
+import { gsap } from "gsap";
 import monkeyFrame from "../../public/monkey frame.png";
 import playLine from "../../public/PlayLine.png";
 import { Fade } from "react-awesome-reveal";
-import { Roll } from "react-awesome-reveal";
 import { motion } from "framer-motion";
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+gsap.registerPlugin(ScrollTrigger);
 
 const Play = () => {
+  let h1 = useRef(null);
+  useEffect(() => {
+    const text = "How to Play";
+    let timeline = gsap.timeline();
+
+    const characters = text.split("");
+
+    h1.innerHTML = "";
+    
+    characters.forEach((char, index) => {
+      const span = document.createElement("span");
+      span.innerHTML = char;
+      h1.appendChild(span);
+
+      gsap.set(span, { opacity: 0, y: "100%", skewY: 1 });
+
+      timeline.to(span, {
+        duration: 0.2,
+        opacity: 1,
+        y: 0,
+        skewY: 0,
+        ease: "power4.out",
+        onComplete: () => {
+          if (index === characters.length - 1) {
+          }
+        },
+      });
+    });
+
+    gsap.to(".e", {
+      scrollTrigger: {
+        trigger: ".d",
+        scrub: 1,
+        markers: false,
+        x: -100,
+      },
+      x: -200,
+      ease: "none",
+      duration: 3
+    });
+  })
   return (
     <div className="flex max-xl:flex-col">
-      <div className="w-1/2 max-xl:w-full flex justify-center items-center">
-        <Roll delay={1000} triggerOnce>
+      <div className="e w-1/2 max-xl:w-full flex justify-center items-center relative left-40">
           <img
             src={monkeyFrame}
             alt=""
             className="h-[800px] max-md:h-[600px] max-sm:h-[400px]"
           />
-        </Roll>
       </div>
       <div className="w-1/2 max-xl:w-full flex-col justify-center items-center max-sm:p-10 max-md:p-20 max-lg:p-32 max-xl:p-40">
         <div>
-          <h1 className="NotoSerif text-7xl">
-            <Fade cascade delay={1000} damping={0.2} triggerOnce>
-              How to Play
-            </Fade>
+          <h1 className="NotoSerif text-7xl" ref={(el) => (h1 = el)}>
           </h1>
         </div>
         <div className="flex py-20">

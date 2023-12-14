@@ -1,10 +1,29 @@
-import React from "react";
+import React, { useEffect } from "react";
 import aboutImg from "../../public/aboutImg.png";
 import { Fade } from "react-awesome-reveal";
 import { motion } from "framer-motion";
+import { gsap } from "gsap";
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+gsap.registerPlugin(ScrollTrigger);
+
 
 const About = () => {
-  return (
+  useEffect(() => {
+    gsap.to(".d", {
+      scrollTrigger: {
+        trigger: ".d",
+        // start: "top center",
+        // end: "top 100px",
+        scrub: 1,
+        markers: false,
+        x: -100,
+      },
+      x: 100,
+      ease: "none",
+      duration: 3
+    });
+  }, []);
+    return (
     <div className="flex justify-between p-5 max-xl:flex-col overflow-hidden">
       <div className="w-1/2 p-10 pl-20 flex flex-col gap-4 max-xl:w-full max-xl:p-2 max-lg:pl-0">
         <div>
@@ -48,25 +67,15 @@ const About = () => {
           </h1>
         </motion.div>
       </div>
-      <motion.div
-        initial={{
-          x: 200,
-          opacity: 0,
-        }}
-        transition={{
-          duration: 1.2,
-          delay: 1.5,
-        }}
-        viewport={{ once: true }}
-        whileInView={{ opacity: 1, x: 0 }}
-        className="w-1/2 max-xl:w-full flex justify-center items-center"
+      <div
+        className="d w-1/2 max-xl:w-full flex justify-center items-center"
       >
         <img
           src={aboutImg}
           alt=""
           className="h-[650px] max-xl:h-[800px] max-lg:h-[650px] max-md:h-[400px]"
         />
-      </motion.div>
+      </div>
     </div>
   );
 };
