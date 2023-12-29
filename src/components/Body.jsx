@@ -3,7 +3,7 @@ import { gsap } from "gsap";
 import monkey from "../../public/monkey.png";
 import monkeybg from "../../public/monkeybg.png";
 import signinBG from "../../public/13986 1.png";
-
+import dot from "../../public/dot.svg";
 
 const Body = () => {
   let h1 = useRef(null);
@@ -64,42 +64,59 @@ const Body = () => {
       delay: 5,
       ease: "Power2.easeInOut",
     });
-    gsap.from(".a" ,{
-      y:400,
+    gsap.from(".a", {
+      y: 400,
       duration: 1,
-      delay:4
-    })
-    gsap.from(".b" ,{
-      y:400,
+      delay: 4,
+    });
+    gsap.from(".b", {
+      y: 400,
       duration: 1,
-      delay:5
-    })
-    
+      delay: 5,
+    });
   });
 
   return (
     <div>
-      <div className="absolute top-[1em] max-sm:top-48 max-md:top-32 -z-10 overflow-hidden">
-        <img src={monkeybg} alt="monkeybg" className="object-none" />
-      </div>
-      <div className="flex justify-center items-center w-full overflow-hidden">
+      <div className="absolute top-5 max-sm:top-20 4xl:top-0 -z-10 overflow-hidden">
         <img
-          ref={(el) => (monkeyImage = el)}
-          src={monkey}
-          alt="monkey"
-          className="h-96"
+          src={monkeybg}
+          alt="monkeybg"
+          className="4xl:w-[3450px] 4xl:h-[2100px]"
         />
       </div>
-      <div className="flex flex-col gap-3 -top-40">
-        <div className="flex justify-center items-center BokorText text-9xl max-2xl:text-8xl max-xl:text-7xl max-lg:text-6xl max-md:text-5xl max-sm:text-4xl uppercase w-full">
-          <h1 ref={(el) => (h1 = el)}></h1>
+      <div className="absolute bottom-[-180px] right-40">
+        <img src={dot} alt="dot" />
+      </div>
+      <div className="relative bottom-24 max-sm:bottom-16">
+        <div className="flex justify-center items-center w-full overflow-hidden">
+          <img
+            ref={(el) => (monkeyImage = el)}
+            src={monkey}
+            alt="monkey"
+            className="w-[500px] h-[500px] max-sm:w-[300px] max-sm:h-[300px] 4xl:w-[1000px] 4xl:h-[1000px]"
+          />
         </div>
-        <div className="flex justify-center items-center">
-          <h1 className="DMSerifText text-xl a">crime is Always crime</h1>
-        </div>
-        <div className="z-0 flex justify-center items-start">
-          <img ref={(el) => (signinImage = el)} src={signinBG} alt="signinBG" className="absolute h-16 -z-10" />
-          <h1 className="pl-1 pt-4 text-xl NotoSerif b">Register Now</h1>
+        <div className="flex flex-col gap-16 max-sm:gap-6 4xl:gap-36 relative bottom-16 max-sm:bottom-6 4xl:bottom-36">
+          <div className="flex justify-center items-center BokorText 4xl:text-[300px] text-9xl max-2xl:text-8xl max-xl:text-7xl max-lg:text-6xl max-md:text-5xl max-sm:text-4xl uppercase w-full">
+            <h1 ref={(el) => (h1 = el)}></h1>
+          </div>
+          <div className="flex justify-center items-center">
+            <h1 className="DMSerifText text-xl 4xl:text-6xl">
+              crime is Always crime
+            </h1>
+          </div>
+          <div className="z-0 flex justify-center items-start">
+            <img
+              ref={(el) => (signinImage = el)}
+              src={signinBG}
+              alt="signinBG"
+              className="absolute h-16 4xl:w-[800px] 4xl:h-60 4xl:bottom-[-100px] -z-10"
+            />
+            <h1 className="pl-1 pt-4 text-xl NotoSerif 4xl:text-6xl">
+              Register Now
+            </h1>
+          </div>
         </div>
       </div>
     </div>

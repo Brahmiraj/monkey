@@ -5,6 +5,11 @@ import playLine from "../../public/PlayLine.png";
 import { Fade } from "react-awesome-reveal";
 import { motion } from "framer-motion";
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import dot from "../../public/dot.svg";
+import lightning from "../../public/lightning.png";
+import astro from "../../public/astro.png";
+import GreenRight from "../../public/GreenRight.png";
+
 gsap.registerPlugin(ScrollTrigger);
 
 const Play = () => {
@@ -51,25 +56,29 @@ const Play = () => {
   })
   return (
     <div className="flex max-xl:flex-col">
-      <div className="e w-1/2 max-xl:w-full flex justify-center items-center relative left-40">
+      <div className="e w-1/2 max-xl:w-full flex justify-center items-center relative max-sm:left-52 left-60 4xl:bottom-72">
           <img
             src={monkeyFrame}
             alt=""
-            className="h-[800px] max-md:h-[600px] max-sm:h-[400px]"
+            className="h-[800px] max-md:h-[600px] max-sm:h-[400px] 4xl:h-[1500px]"
           />
       </div>
       <div className="w-1/2 max-xl:w-full flex-col justify-center items-center max-sm:p-10 max-md:p-20 max-lg:p-32 max-xl:p-40">
         <div>
-          <h1 className="NotoSerif text-7xl" ref={(el) => (h1 = el)}>
+          <h1 className="NotoSerif text-7xl 4xl:text-9xl" ref={(el) => (h1 = el)}>
           </h1>
         </div>
         <div className="flex py-20">
-          <div>
-            <Fade delay={2000} triggerOnce>
-              <img src={playLine} alt="" className="pt-4 h-96 w-16" />
-            </Fade>
+        <div className="w-3.5 h-[388.43px] justify-end items-center gap-2.5 inline-flex">
+            <div className="w-3.5 h-[358.43px] max-sm:h-[368px] relative max-sm:right-3">
+              <div className="w-3.5 h-3.5 left-[14px] top-0 relative bg-white rounded-full border border-white 4xl:w-7 4xl:h-7" />
+              <div className="w-1 h-[185px] max-sm:h-[181px] bg-gradient-to-b from-green-500 to-purple-700 relative left-[19px] 4xl:w-2 4xl:h-[175px] 4xl:left-[23px]" />
+              <div className="w-3.5 h-3.5 left-[14px] relative rounded-full border border-white 4xl:w-7 4xl:h-7" />
+              <div className="w-1 h-[130px] max-sm:h-[110px] bg-gradient-to-b from-green-500 to-purple-700 relative left-[19px] 4xl:w-2 4xl:left-[23px]" />
+              <div className="w-3.5 h-3.5 left-[14px] relative rounded-full border border-white 4xl:w-7 4xl:h-7" />
+            </div>
           </div>
-          <div className="px-10 pr-80 flex flex-col gap-5 max-2xl:pr-60 max-xl:pr-40 max-sm:pr-0 max-sm:px-0">
+          <div className="px-10 pr-80 flex flex-col gap-5 max-2xl:pr-60 max-xl:pr-0 max-sm:pr-0 max-sm:px-0 relative max-sm:left-5">
             <motion.div
               initial={{
                 x: 200,
@@ -83,10 +92,10 @@ const Play = () => {
               viewport={{ once: true }}
               className={"text-xl"}
             >
-              <h1 className="text-[#07BD97] text-4xl DMSans">
+              <h1 className="text-[#07BD97] text-4xl DMSans max-sm:text-2xl 4xl:text-6xl">
                 Discover a City
               </h1>
-              <p className="DMSans text-lg">
+              <p className="DMSans text-lg max-sm:text-base w-96 max-sm:w-72 max-xl:w-96 4xl:text-4xl 4xl:w-full">
                 Lorem ipsum dolor sit amet consectetur. Habitasse ut sed enim in
                 odio egestas platea viverra risus. Sed sodales vestibulum sed
                 vulputate consequat feugiat amet convallis lacus.
@@ -104,10 +113,10 @@ const Play = () => {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
             >
-              <h1 className="text-[#07BD97] text-4xl DMSans">
+              <h1 className="text-[#07BD97] text-4xl DMSans max-sm:text-2xl 4xl:text-6xl">
                 Meet the Gangster
               </h1>
-              <p className="DMSans text-lg">
+              <p className="DMSans text-lg max-sm:text-base w-96 max-sm:w-72 max-xl:w-96 4xl:text-4xl 4xl:w-full">
                 Lorem ipsum dolor sit amet consectetur. Habitasse ut sed enim in
                 odio egestas platea viverra risus.
               </p>
@@ -124,16 +133,28 @@ const Play = () => {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
             >
-              <h1 className="text-[#07BD97] text-4xl DMSans">
+              <h1 className="text-[#07BD97] text-4xl DMSans max-sm:text-2xl 4xl:text-6xl">
                 Discover a City
               </h1>
-              <p className="DMSans text-lg">
+              <p className="DMSans text-lg max-sm:text-base w-96 max-sm:w-72 max-xl:w-96 4xl:text-4xl 4xl:w-full">
                 Lorem ipsum dolor sit amet consectetur. Habitasse ut sed enim in
                 odio egestas platea viverra risus.
               </p>
             </motion.div>
           </div>
         </div>
+      </div>
+      <div className="absolute bottom-[-1030px] right-[1000px]">
+        <img src={dot} alt="dot" className="w-3"/>
+      </div>
+      <div className="absolute bottom-[-2350px] 4xl:bottom-[-5000px] right-[300px]">
+        <img src={lightning} alt="lightning" className="w-[1000px] 4xl:w-[2000px] opacity-70"/>
+      </div>
+      <div className="absolute bottom-[-1950px] left-[200px]">
+        <img src={astro} alt="astro" className="w-32"/>
+      </div>
+      <div className="absolute bottom-[-2700px] 4xl:bottom-[-3700px] right-0">
+        <img src={GreenRight} alt="GreenRight" className="w-[500px] 4xl:w-[1000px]"/>
       </div>
     </div>
   );
