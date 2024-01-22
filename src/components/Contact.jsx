@@ -70,7 +70,7 @@ const Contact = () => {
                     className="absolute h-20 -z-10 "
                   />
                   <h1 className="pl-12 text-xl w-full NotoSerif  cursor-pointer	">
-                    Register Now
+                    Buy Now
                   </h1>
                 </div>
               </JackInTheBox>
@@ -79,7 +79,7 @@ const Contact = () => {
         </div>
       </div>
       <div className="flex justify-between items-end px-40 relative top-[230px] max-sm:top-0 text-gray-400 max-md:hidden max-xl:px-10 max-xl:top-28">
-        <img src={socialMedia} alt="socialMedia" className="" />
+        <img src={socialMedia} alt="socialMedia" className="cursor-pointer" />
         <h1>All Rights Reserved - Project T </h1>
         <img src={dot} alt="dot" />
       </div>

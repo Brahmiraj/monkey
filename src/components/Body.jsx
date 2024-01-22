@@ -48,7 +48,7 @@ const Body = () => {
       duration: 1,
       scale: 1.4,
       opacity: 0,
-      delay: 2,
+      delay: 1,
       ease: "Power2.easeInOut",
     });
 
@@ -61,24 +61,24 @@ const Body = () => {
       duration: 1,
       scale: 1.4,
       opacity: 0,
-      delay: 5,
+      delay: 1,
       ease: "Power2.easeInOut",
     });
     gsap.from(".a", {
       y: 400,
       duration: 1,
-      delay: 4,
+      delay: 1,
     });
     gsap.from(".b", {
       y: 400,
       duration: 1,
-      delay: 5,
+      delay: 1,
     });
   });
 
   return (
     <div className="">
-      <div className="absolute top-5 max-sm:top-20  -z-10 overflow-hidden ">
+      <div className="absolute top-5 max-sm:top-20  -z-10  ">
         <img
           src={monkeybg}
           alt="monkeybg"
