@@ -94,29 +94,7 @@ const Header = ({ timeline, ease }) => {
           </button>
         </div>
         <div className="flex gap-6 4xl:text-4xl 4xl:pr-40">
-          <div>
-            <h1>ENG</h1>
-          </div>
-          <div className="pt-2">
-            <img src={dropdown} alt="" className="4xl:w-8" />
-          </div>
-          <div>
-            <img
-              src={divider}
-              alt="divider"
-              className="h-8 4xl:w-10 4xl:h-14"
-            />
-          </div>
-          <div className="z-0">
-            <img
-              src={signinBG}
-              alt="signinBG"
-              className="absolute h-8 4xl:h-24 4xl:w-96 4xl:top-4 4xl:right-52 -z-10"
-            />
-            <h1 className="pl-12 pt-1 text-sm 4xl:text-4xl relative 4xl:left-10">
-              Sign In
-            </h1>
-          </div>
+ {/* logo here */}
         </div>
         <div className="flex items-center gap-14 max-lg:gap-5 max-md:hidden cursor-pointer z-10">
           <h1
@@ -167,6 +145,31 @@ const Header = ({ timeline, ease }) => {
             COMMUNITY
             {selectedMenuItem === "COMMUNITY" && <CommonSVG />}
           </h1>
+        </div>
+        <div className="flex gap-6 4xl:text-4xl 4xl:pr-40">
+          <div>
+            <h1>ENG</h1>
+          </div>
+          <div className="pt-2">
+            <img src={dropdown} alt="" className="4xl:w-8" />
+          </div>
+          <div>
+            <img
+              src={divider}
+              alt="divider"
+              className="h-8 4xl:w-10 4xl:h-14"
+            />
+          </div>
+          <div className="z-0">
+            <img
+              src={signinBG}
+              alt="signinBG"
+              className="absolute h-8 4xl:h-24 4xl:w-96 4xl:top-4 4xl:right-52 -z-10"
+            />
+            <h1 className="pl-12 pt-1 text-sm 4xl:text-4xl relative 4xl:left-10">
+              Sign In
+            </h1>
+          </div>
         </div>
       </div>
 
