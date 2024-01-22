@@ -25,4 +25,21 @@
   .hide-on-mobile {
     display: none;
   }
+  .about-t{
+    text-align: center;
+    justify-content: center;
+  }
 }
+@media only screen and (max-width: 768px) {
+  .hide-on-mobile {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .hide-on-mobile {
+    display: none;
+  }
+}
+
+ 

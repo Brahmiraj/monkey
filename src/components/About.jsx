@@ -56,7 +56,7 @@ const About = () => {
             viewport={{ once: true }}
             className={"text-xl"}
           >
-            <h1 className="DMSans text-xl 4xl:text-5xl py-5">
+            <h1 className="DMSans text-xl 4xl:text-5xl py-5 about-t ">
               project T stands at the forefront of the crypto revolution,
               positioning itself as a beacon of innovation and excellence in the
               rapidly evolving blockchain landscape. At its core, Project T is
@@ -66,7 +66,7 @@ const About = () => {
               Project T offers a transformative experience for both seasoned
               enthusiasts and newcomers to the world of digital assets.
             </h1>
-            <h1 className="DMSans text-xl 4xl:text-5xl py-5">
+            <h1 className="DMSans text-xl 4xl:text-5xl py-5 about-t">
               Imagine a crypto ecosystem where transactions are not just secure
               and efficient, but also intuitive and accessible. Project T
               delivers on this vision by combining robust blockchain
@@ -75,7 +75,7 @@ const About = () => {
               opportunities, from staking and yield farming to innovative
               governance models that empower the community.
             </h1>
-            <h1 className="DMSans text-xl 4xl:text-5xl py-5">
+            <h1 className="DMSans text-xl 4xl:text-5xl py-5 about-t">
               Project T is more than a digital asset; it's a community-driven
               initiative. Engage with like-minded individuals, participate in
               governance decisions, and contribute to the evolution of the

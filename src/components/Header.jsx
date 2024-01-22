@@ -94,7 +94,7 @@ const Header = ({ timeline, ease }) => {
           </button>
         </div>
         <div className="flex gap-6 4xl:text-4xl 4xl:pr-40">
- {/* logo here */}
+          {/* logo here */}
         </div>
         <div className="flex items-center gap-14 max-lg:gap-5 max-md:hidden cursor-pointer z-10">
           <h1
@@ -146,7 +146,7 @@ const Header = ({ timeline, ease }) => {
             {selectedMenuItem === "COMMUNITY" && <CommonSVG />}
           </h1>
         </div>
-        <div className="flex gap-6 4xl:text-4xl 4xl:pr-40">
+        <div className="flex gap-6 4xl:text-4xl 4xl:pr-40 cursor-pointer">
           <div>
             <h1>ENG</h1>
           </div>
@@ -160,14 +160,14 @@ const Header = ({ timeline, ease }) => {
               className="h-8 4xl:w-10 4xl:h-14"
             />
           </div>
-          <div className="z-0">
+          <div className="z-0 cursor-pointer">
             <img
               src={signinBG}
               alt="signinBG"
-              className="absolute h-8 4xl:h-24 4xl:w-96 4xl:top-4 4xl:right-52 -z-10"
+              className="absolute h-8 4xl:h-24 4xl:w-96 4xl:top-4 4xl:right-52 -z-10 cursor-pointer	"
             />
-            <h1 className="pl-12 pt-1 text-sm 4xl:text-4xl relative 4xl:left-10">
-              Sign In
+            <h1 className="pl-12 pt-1 text-sm 4xl:text-4xl relative 4xl:left-10 cursor-pointer	">
+              Chart
             </h1>
           </div>
         </div>
