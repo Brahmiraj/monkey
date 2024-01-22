@@ -80,12 +80,12 @@ const Contact = () => {
       </div>
       <div className="flex justify-between items-end px-40 relative top-[230px] max-sm:top-0 text-gray-400 max-md:hidden max-xl:px-10 max-xl:top-28">
         <img src={socialMedia} alt="socialMedia" className="" />
-        <h1>All Rights Reserved - @Tharakadasun2023 </h1>
+        <h1>All Rights Reserved - Project T </h1>
         <img src={dot} alt="dot" />
       </div>
       <div className="flex justify-between items-end px-4 relative top-14 text-gray-400 md:hidden">
         <img src={socialMedia} alt="socialMedia" className="w-20" />
-        <h1 className="text-xs">All Rights Reserved - @Tharakadasun2023 </h1>
+        <h1 className="text-xs">All Rights Reserved -Project T </h1>
       </div>
       <div>
         <img
