@@ -11,7 +11,7 @@ const App = () => {
   let tl = new gsap.timeline();
   let ease = Power3.easeOut();
   return (
-    <div className="overflow-hidden">
+    <div>
       <Header timeline={tl} ease={ease} />
       <Body timeline={tl} />
       <About />
