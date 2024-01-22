@@ -6,9 +6,9 @@ import { JackInTheBox } from "react-awesome-reveal";
 import { motion } from "framer-motion";
 import socialMedia from "../../public/Social media.svg";
 import dot from '../../public/dot.svg'
-import greenLeft from "../../public/greenLeft.png";
-import astro from "../../public/astro.png";
-import greenround from "../../public/greenround.png";
+// import greenLeft from "../../public/greenLeft.png";
+// import astro from "../../public/astro.png";
+// import greenround from "../../public/greenround.png";
 
 
 const Contact = () => {
@@ -73,9 +73,7 @@ const Contact = () => {
       </div>
       <div className="flex justify-between items-end px-40 relative top-[230px] max-sm:top-0 text-gray-400 max-md:hidden max-xl:px-10 max-xl:top-28">
         <img src={socialMedia} alt="socialMedia" className="" />
-        <h1 >
-          All Rights Reserved - @Tharakadasun2023{" "}
-        </h1>
+        <h1>All Rights Reserved - @Tharakadasun2023 </h1>
         <img src={dot} alt="dot" />
       </div>
       <div className="flex justify-between items-end px-4 relative top-14 text-gray-400 md:hidden">
@@ -83,21 +81,25 @@ const Contact = () => {
         <h1 className="text-xs">All Rights Reserved - @Tharakadasun2023 </h1>
       </div>
       <div>
-        <img src={footer} alt="monkeybg" />
+        <img
+          src={footer}
+          alt="monkeybg"
+          className="2xl:w-[4250px] 4xl:h-[2100px]"
+        />
       </div>
-      <div className="absolute bottom-[-3000px] max-sm:bottom-[-2730px] 4 left-0">
+      {/* <div className="absolute bottom-[-3000px] max-sm:bottom-[-2730px] 4 left-0">
         <img
           src={greenLeft}
           alt="greenLeft"
           className="w-[500px] max-sm:w-[300px] "
         />
-      </div>
-      <div className="absolute bottom-[-2800px] right-[500px]">
+      </div> */}
+      {/* <div className="absolute bottom-[-2800px] right-[500px]">
         <img src={astro} alt="astro" className="w-32" />
       </div>
       <div className="absolute bottom-[-2500px] right-[700px]">
         <img src={dot} alt="dot" className="w-3" />
-      </div>
+      </div> */}
       {/* <div className="absolute bottom-[-3000px] max-sm:bottom-[-2600px] max-sm:right-0 right-96 ">
         {/* <img
           src={greenround}
