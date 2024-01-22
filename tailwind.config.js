@@ -3,9 +3,9 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
-      screens: {
-        "4xl": "2150px",
-      },
+      // screens: {
+      //   "4xl": "2150px",
+      // },
     },
   },
   plugins: [],

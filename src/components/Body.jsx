@@ -77,12 +77,12 @@ const Body = () => {
   });
 
   return (
-    <div>
-      <div className="absolute top-5 max-sm:top-20 4xl:top-0 -z-10 overflow-hidden">
+    <div className="">
+      <div className="absolute top-5 max-sm:top-20  -z-10 overflow-hidden ">
         <img
           src={monkeybg}
           alt="monkeybg"
-          className="4xl:w-[3450px] 4xl:h-[2100px]"
+          className="2xl:w-[3450px] 4xl:h-[2100px]"
         />
       </div>
       <div className="absolute bottom-[-180px] right-40">

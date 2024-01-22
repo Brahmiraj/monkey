@@ -17,9 +17,9 @@ const bounceTransition = {
 
 const Logo = () => {
   return (
-    <div>
+    <div className="max-w-[1600px] mx-auto">
       <div className="flex justify-center items-center">
-        <h1 className="NotoSerif text-7xl max-xl:text-6xl max-md:text-5xl max-sm:text-4xl 4xl:text-9xl">
+        <h1 className="NotoSerif text-7xl max-xl:text-6xl max-md:text-5xl max-sm:text-4xl ">
           <Fade cascade delay={1000} damping={0.2} triggerOnce>
             Details of Gangster
           </Fade>
@@ -34,9 +34,13 @@ const Logo = () => {
             }}
             src={logo3}
             alt="logo1"
-            className="pl-20 h-20 max-md:h-14 max-md:pl-10 4xl:h-80"
+            className="pl-20 h-20 max-md:h-14 max-md:pl-10 "
           />
-          <img src={lightBase} alt="lightBase" className="w-60 max-md:w-40 4xl:w-[500px]" />
+          <img
+            src={lightBase}
+            alt="lightBase"
+            className="w-60 max-md:w-40 "
+          />
         </div>
         <div>
           <motion.img
@@ -46,9 +50,13 @@ const Logo = () => {
             }}
             src={logo2}
             alt="logo1"
-            className="pl-14 h-60 max-md:h-24 max-md:pl-10 4xl:h-[600px]"
+            className="pl-14 h-60 max-md:h-24 max-md:pl-10 "
           />
-          <img src={lightBase} alt="lightBase" className="w-96 max-md:w-60 4xl:w-[800px]" />
+          <img
+            src={lightBase}
+            alt="lightBase"
+            className="w-96 max-md:w-60 "
+          />
         </div>
         <div>
           <motion.img
@@ -58,9 +66,13 @@ const Logo = () => {
             }}
             src={logo1}
             alt="logo1"
-            className="pl-20 h-20 max-md:h-14 max-md:pl-10 4xl:h-80"
+            className="pl-20 h-20 max-md:h-14 max-md:pl-10 "
           />
-          <img src={lightBase} alt="lightBase" className="w-60 max-md:w-40 4xl:w-[500px]" />
+          <img
+            src={lightBase}
+            alt="lightBase"
+            className="w-60 max-md:w-40 "
+          />
         </div>
       </div>
     </div>
