@@ -81,6 +81,43 @@ const Header = ({ timeline, ease }) => {
   return (
     <div className="bg-black  p-10 px-60 max-2xl:px-40 max-xl:px-10 4xl:text-4xl">
       <div className="flex justify-between items-center">
+        <div className="max-md:inline hidden z-10">
+          <button onClick={toggleMenu}>
+            <svg
+              className="block h-4 w-4 fill-current"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>Mobile menu</title>
+              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+            </svg>
+          </button>
+        </div>
+        <div className="flex gap-6 4xl:text-4xl 4xl:pr-40">
+          <div>
+            <h1>ENG</h1>
+          </div>
+          <div className="pt-2">
+            <img src={dropdown} alt="" className="4xl:w-8" />
+          </div>
+          <div>
+            <img
+              src={divider}
+              alt="divider"
+              className="h-8 4xl:w-10 4xl:h-14"
+            />
+          </div>
+          <div className="z-0">
+            <img
+              src={signinBG}
+              alt="signinBG"
+              className="absolute h-8 4xl:h-24 4xl:w-96 4xl:top-4 4xl:right-52 -z-10"
+            />
+            <h1 className="pl-12 pt-1 text-sm 4xl:text-4xl relative 4xl:left-10">
+              Sign In
+            </h1>
+          </div>
+        </div>
         <div className="flex items-center gap-14 max-lg:gap-5 max-md:hidden cursor-pointer z-10">
           <h1
             className={`${
@@ -130,34 +167,6 @@ const Header = ({ timeline, ease }) => {
             COMMUNITY
             {selectedMenuItem === "COMMUNITY" && <CommonSVG />}
           </h1>
-        </div>
-
-        <div className="max-md:inline hidden z-10">
-          <button onClick={toggleMenu}>
-            <svg
-              className="block h-4 w-4 fill-current"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <title>Mobile menu</title>
-              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
-            </svg>
-          </button>
-        </div>
-        <div className="flex gap-6 4xl:text-4xl 4xl:pr-40">
-          <div>
-            <h1>ENG</h1>
-          </div>
-          <div className="pt-2">
-            <img src={dropdown} alt="" className="4xl:w-8"/>
-          </div>
-          <div>
-            <img src={divider} alt="divider" className="h-8 4xl:w-10 4xl:h-14" />
-          </div>
-          <div className="z-0">
-            <img src={signinBG} alt="signinBG" className="absolute h-8 4xl:h-24 4xl:w-96 4xl:top-4 4xl:right-52 -z-10" />
-            <h1 className="pl-12 pt-1 text-sm 4xl:text-4xl relative 4xl:left-10">Sign In</h1>
-          </div>
         </div>
       </div>
 

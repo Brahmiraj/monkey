@@ -150,23 +150,23 @@ const Play = () => {
         <div className="absolute bottom-[-1030px] right-[1000px]">
           <img src={dot} alt="dot" className="w-3" />
         </div>
-        <div className="absolute bottom-[-2350px]  right-[300px]">
+        {/* <div className="absolute bottom-[-2350px]  right-[300px]">
           <img
             src={lightning}
             alt="lightning"
             className="w-[1000px]  opacity-70"
           />
-        </div>
-        <div className="absolute bottom-[-1950px] left-[200px]">
+        </div> */}
+        {/* <div className="absolute bottom-[-1950px] left-[200px]">
           <img src={astro} alt="astro" className="w-32" />
-        </div>
-        <div className="absolute bottom-[-2700px]  right-0">
+        </div> */}
+        {/* <div className="absolute bottom-[-2700px]  right-0">
           <img
             src={GreenRight}
             alt="GreenRight"
             className="w-[500px] "
           />
-        </div>
+        </div> */}
       </div>
     </div>
   );

@@ -82,7 +82,7 @@ const Body = () => {
         <img
           src={monkeybg}
           alt="monkeybg"
-          className="2xl:w-[3450px] 4xl:h-[2100px]"
+          className="2xl:w-[4250px] 4xl:h-[2100px]"
         />
       </div>
       <div className="absolute bottom-[-180px] right-40">
