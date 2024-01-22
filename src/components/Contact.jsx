@@ -37,7 +37,7 @@ const Contact = () => {
                 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
-                className="DMSans text-lg "
+                className="DMSans text-lg about-t "
               >
                 Project T stands at the forefront of crypto innovation,
                 seamlessly merging state-of-the-art blockchain technology with
@@ -69,7 +69,7 @@ const Contact = () => {
                     alt="signinBG"
                     className="absolute h-20 -z-10 "
                   />
-                  <h1 className="pl-12 text-xl w-full NotoSerif ">
+                  <h1 className="pl-12 text-xl w-full NotoSerif  cursor-pointer	">
                     Register Now
                   </h1>
                 </div>

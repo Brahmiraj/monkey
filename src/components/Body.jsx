@@ -113,7 +113,7 @@ const Body = () => {
               the next era of financial empowerment.
             </p>
           </div>
-          <div className="z-0 flex justify-center items-start">
+          <div className="z-0 flex justify-center items-start cursor-pointer	">
             <img
               ref={(el) => (signinImage = el)}
               src={signinBG}
@@ -121,7 +121,7 @@ const Body = () => {
               className="absolute h-16 4xl:w-[800px] 4xl:h-60 4xl:bottom-[-100px] -z-10"
             />
             <h1 className="pl-1 pt-4 text-xl NotoSerif 4xl:text-6xl">
-              Register Now
+              Buy Now
             </h1>
           </div>
         </div>
