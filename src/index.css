@@ -18,3 +18,11 @@
 .NotoSerif {
   font-family: 'Noto Serif';
 }
+/* Add this CSS to your stylesheet or style tag */
+
+/* Hide the div on screens with a maximum width of 640px (adjust as needed) */
+@media only screen and (max-width: 640px) {
+  .hide-on-mobile {
+    display: none;
+  }
+}

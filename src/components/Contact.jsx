@@ -63,7 +63,7 @@ const Contact = () => {
                 </div>
               </JackInTheBox>
               <JackInTheBox delay={1500} triggerOnce className="w-96">
-                <div className="z-0 flex justify-center items-center">
+                <div className="z-0 flex justify-center items-center hide-on-mobile">
                   <img
                     src={signinBG}
                     alt="signinBG"
