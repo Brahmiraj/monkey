@@ -11,7 +11,7 @@ const Body = () => {
   let signinImage = useRef(null);
 
   useEffect(() => {
-    const text = "welcome the crime gaNgsta";
+    const text = "Power of  Crypto Ecosystem";
     let timeline = gsap.timeline();
 
     const characters = text.split("");
@@ -101,10 +101,17 @@ const Body = () => {
           <div className="flex justify-center items-center BokorText 4xl:text-[300px] text-9xl max-2xl:text-8xl max-xl:text-7xl max-lg:text-6xl max-md:text-5xl max-sm:text-4xl uppercase w-full">
             <h1 ref={(el) => (h1 = el)}></h1>
           </div>
-          <div className="flex justify-center items-center">
-            <h1 className="DMSerifText text-xl 4xl:text-6xl">
-              crime is Always crime
-            </h1>
+          <div className="text-center ">
+            <p className="mx-10">
+              Welcome to Project T, where innovation meets blockchain
+              excellence. Embark on a journey into the future of decentralized
+              finance and digital assets. Our cutting-edge crypto
+            </p>
+            <p className="mx-10">
+              token is poised to redefine the landscape, offering unparalleled
+              opportunities and a seamless user experience. Join us as we shape
+              the next era of financial empowerment.
+            </p>
           </div>
           <div className="z-0 flex justify-center items-start">
             <img

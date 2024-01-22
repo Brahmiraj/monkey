@@ -39,9 +39,16 @@ const Contact = () => {
                 viewport={{ once: true }}
                 className="DMSans text-lg "
               >
-                Lorem ipsum dolor sit amet consectetur. Tristique quis dictumst
-                tellus aliquam ullamcorper augue arcu mattis. Ut et morbi magna
-                aliquet aliquet quis vestibulum. Vel ipsum sagittis aliquet mi.
+                Project T stands at the forefront of crypto innovation,
+                seamlessly merging state-of-the-art blockchain technology with
+                user-centric design. As a beacon of financial empowerment,
+                Project T transcends traditional digital assets. Its intuitive
+                interface caters to all, from seasoned enthusiasts to newcomers.
+                Embrace a community-driven ecosystem where participation
+                matters. Engage in governance decisions, contribute to growth,
+                and explore a diverse range of opportunities. Project T invites
+                you to be part of the evolution, shaping the future of
+                decentralized finance
               </motion.p>
             </div>
             <div className="flex justify-between max-md:flex-col max-md:gap-10">

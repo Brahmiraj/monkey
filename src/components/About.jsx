@@ -38,7 +38,7 @@ const About = () => {
             <h1 className="NotoSerif text-7xl uppercase colorGradien">
               <span className="bg-gradient-to-r from-purple-600 to-teal-500 bg-[length:100%_6px] bg-no-repeat bg-bottom 4xl:text-9xl">
                 <Fade cascade delay={1000} damping={0.2} triggerOnce>
-                  Gangsta
+                  Project T
                 </Fade>
               </span>
             </h1>
@@ -56,15 +56,34 @@ const About = () => {
             viewport={{ once: true }}
             className={"text-xl"}
           >
-            <h1 className="DMSans text-xl 4xl:text-5xl">
-              Lorem ipsum dolor sit amet consectetur. Dolor aliquet amet
-              pellentesque scelerisque velit arcu bibendum maecenas duis. Mauris
-              arcu fermentum posuere vulputate eget ipsum faucibus a. A libero
-              euismod adipiscing iaculis. A pretium et magnis maecenas pretium
-              proin pellentesque urna. Et posuere diam proin enim at nisl ornare
-              purus. Maecenas nullam molestie egestas a donec tincidunt
-              consectetur urna. Feugiat hendrerit ac augue amet cursus sed.
-              Tristique ultrices est convallis feugiat.
+            <h1 className="DMSans text-xl 4xl:text-5xl py-5">
+              project T stands at the forefront of the crypto revolution,
+              positioning itself as a beacon of innovation and excellence in the
+              rapidly evolving blockchain landscape. At its core, Project T is
+              more than just a crypto token; it's a visionary platform designed
+              to reshape the future of decentralized finance. By seamlessly
+              integrating cutting-edge technology and user-centric design,
+              Project T offers a transformative experience for both seasoned
+              enthusiasts and newcomers to the world of digital assets.
+            </h1>
+            <h1 className="DMSans text-xl 4xl:text-5xl py-5">
+              Imagine a crypto ecosystem where transactions are not just secure
+              and efficient, but also intuitive and accessible. Project T
+              delivers on this vision by combining robust blockchain
+              architecture with a commitment to user-friendly interfaces. As you
+              explore the platform, you'll discover a diverse range of
+              opportunities, from staking and yield farming to innovative
+              governance models that empower the community.
+            </h1>
+            <h1 className="DMSans text-xl 4xl:text-5xl py-5">
+              Project T is more than a digital asset; it's a community-driven
+              initiative. Engage with like-minded individuals, participate in
+              governance decisions, and contribute to the evolution of the
+              Project T ecosystem. Whether you're a seasoned crypto veteran or
+              just starting your journey, Project T invites you to be part of a
+              movement that is shaping the next era of financial empowerment.
+              Join us as we unlock the full potential of blockchain technology
+              and usher in a new era of possibilities with Project T.
             </h1>
           </motion.div>
         </div>

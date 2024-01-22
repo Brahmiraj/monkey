@@ -21,7 +21,7 @@ const Logo = () => {
       <div className="flex justify-center items-center">
         <h1 className="NotoSerif text-7xl max-xl:text-6xl max-md:text-5xl max-sm:text-4xl ">
           <Fade cascade delay={1000} damping={0.2} triggerOnce>
-            Details of Gangster
+            Details of  Project T
           </Fade>
         </h1>
       </div>

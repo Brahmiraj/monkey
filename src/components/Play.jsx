@@ -66,18 +66,15 @@ const Play = () => {
         </div>
         <div className="w-1/2 max-xl:w-full flex-col justify-center items-center max-sm:p-10 max-md:p-20 max-lg:p-32 max-xl:p-40">
           <div>
-            <h1
-              className="NotoSerif text-7xl "
-              ref={(el) => (h1 = el)}
-            ></h1>
+            <h1 className="NotoSerif text-7xl " ref={(el) => (h1 = el)}></h1>
           </div>
           <div className="flex py-20">
             <div className="w-3.5 h-[388.43px] justify-end items-center gap-2.5 inline-flex">
               <div className="w-3.5 h-[358.43px] max-sm:h-[368px] relative max-sm:right-3">
                 <div className="w-3.5 h-3.5 left-[14px] top-0 relative bg-white rounded-full border border-white " />
-                <div className="w-1 h-[185px] max-sm:h-[181px] bg-gradient-to-b from-green-500 to-purple-700 relative left-[19px]" />
+                <div className="w-1 h-[285px] max-sm:h-[181px] bg-gradient-to-b from-green-500 to-purple-700 relative left-[19px]" />
                 <div className="w-3.5 h-3.5 left-[14px] relative rounded-full border border-white " />
-                <div className="w-1 h-[130px] max-sm:h-[110px] bg-gradient-to-b from-green-500 to-purple-700 relative left-[19px] " />
+                <div className="w-1 h-[230px] max-sm:h-[110px] bg-gradient-to-b from-green-500 to-purple-700 relative left-[19px] " />
                 <div className="w-3.5 h-3.5 left-[14px] relative rounded-full border border-white " />
               </div>
             </div>
@@ -96,12 +93,12 @@ const Play = () => {
                 className={"text-xl"}
               >
                 <h1 className="text-[#07BD97] text-4xl DMSans max-sm:text-2xl ">
-                  Discover a City
+                  Innovative Technology:
                 </h1>
                 <p className="DMSans text-lg max-sm:text-base w-96 max-sm:w-72 max-xl:w-96 ">
-                  Lorem ipsum dolor sit amet consectetur. Habitasse ut sed enim
-                  in odio egestas platea viverra risus. Sed sodales vestibulum
-                  sed vulputate consequat feugiat amet convallis lacus.
+                  Project T leverages cutting-edge blockchain technology,
+                  ensuring secure and efficient transactions while pushing the
+                  boundaries of what's possible in decentralized finance.
                 </p>
               </motion.div>
               <motion.div
@@ -117,11 +114,13 @@ const Play = () => {
                 viewport={{ once: true }}
               >
                 <h1 className="text-[#07BD97] text-4xl DMSans max-sm:text-2xl ">
-                  Meet the Gangster
+                  User-Centric Design:
                 </h1>
                 <p className="DMSans text-lg max-sm:text-base w-96 max-sm:w-72 max-xl:w-96 ">
-                  Lorem ipsum dolor sit amet consectetur. Habitasse ut sed enim
-                  in odio egestas platea viverra risus.
+                  With a focus on simplicity and accessibility, Project T
+                  provides a seamless user experience, making it easy for both
+                  beginners and experienced users to navigate the crypto
+                  landscape.
                 </p>
               </motion.div>
               <motion.div
@@ -137,11 +136,13 @@ const Play = () => {
                 viewport={{ once: true }}
               >
                 <h1 className="text-[#07BD97] text-4xl DMSans max-sm:text-2xl ">
-                  Discover a City
+                  Community Empowerment:
                 </h1>
                 <p className="DMSans text-lg max-sm:text-base w-96 max-sm:w-72 max-xl:w-96 ">
-                  Lorem ipsum dolor sit amet consectetur. Habitasse ut sed enim
-                  in odio egestas platea viverra risus.
+                  Project T is more than a token; it's a community-driven
+                  initiative. Engage in governance decisions, contribute to the
+                  ecosystem, and be part of shaping the future of decentralized
+                  finance.
                 </p>
               </motion.div>
             </div>
