@@ -133,7 +133,7 @@ const Header = ({ timeline, ease }) => {
             ref={(el) => (menu_item3 = el)}
             onClick={() => handleMenuItemClick("SUBSCRIBE")}
           >
-            SUBSCRIBE {selectedMenuItem === "SUBSCRIBE" && <CommonSVG />}
+            Tokenomics {selectedMenuItem === "SUBSCRIBE" && <CommonSVG />}
           </h1>
           <h1
             className={`${
@@ -224,7 +224,7 @@ const Header = ({ timeline, ease }) => {
                 } DMSans`}
                 onClick={() => handleMenuItemClick("SUBSCRIBE")}
               >
-                SUBSCRIBE
+                Tokenomics
                 {selectedMenuItem === "SUBSCRIBE" && <CommonSVG />}
               </a>
             </li>

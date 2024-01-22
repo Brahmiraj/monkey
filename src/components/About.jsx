@@ -56,7 +56,7 @@ const About = () => {
             viewport={{ once: true }}
             className={"text-xl"}
           >
-            <h1 className="DMSans text-xl 4xl:text-5xl py-5 about-t ">
+            <h1 className="DMSans text-xl 4xl:text-5xl py-5 about-t">
               project T stands at the forefront of the crypto revolution,
               positioning itself as a beacon of innovation and excellence in the
               rapidly evolving blockchain landscape. At its core, Project T is
