@@ -76,7 +76,7 @@ const Contact = () => {
               </JackInTheBox> */}
 
               <JackInTheBox delay={1500} triggerOnce>
-                <div className="flex justify-center items-center pb-8 text-xl w-full NotoSerif cursor-pointer backgroundImageClass ">
+                <div className="flex justify-center items-center pb-8 text-xl w-full NotoSerif cursor-pointer backgroundImageClass">
                   Buy Now
                 </div>
               </JackInTheBox>
