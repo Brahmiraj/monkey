@@ -57,7 +57,7 @@ const Play = () => {
   return (
     <div className="max-w-[1600px] mx-auto">
       <div className="flex max-xl:flex-col">
-        <div className=" w-1/2 max-xl:w-full flex justify-center items-center relative  ">
+        <div className=" w-1/2 max-xl:w-full flex justify-center items-center relative  max-sm:ml-10 ">
           <img
             src={monkeyFrame}
             alt=""
@@ -72,9 +72,9 @@ const Play = () => {
             <div className="w-3.5 h-[388.43px] justify-end items-center gap-2.5 inline-flex">
               <div className="w-3.5 h-[358.43px] max-sm:h-[368px] relative max-sm:right-3">
                 <div className="w-3.5 h-3.5 left-[14px] top-0 relative bg-white rounded-full border border-white " />
-                <div className="w-1 h-[285px] max-sm:h-[181px] bg-gradient-to-b from-green-500 to-purple-700 relative left-[19px]" />
+                <div className="w-1 h-[285px] max-sm:h-[241px] bg-gradient-to-b from-green-500 to-purple-700 relative left-[19px]" />
                 <div className="w-3.5 h-3.5 left-[14px] relative rounded-full border border-white " />
-                <div className="w-1 h-[230px] max-sm:h-[110px] bg-gradient-to-b from-green-500 to-purple-700 relative left-[19px] " />
+                <div className="w-1 h-[230px] max-sm:h-[240px] bg-gradient-to-b from-green-500 to-purple-700 relative left-[19px] " />
                 <div className="w-3.5 h-3.5 left-[14px] relative rounded-full border border-white " />
               </div>
             </div>
