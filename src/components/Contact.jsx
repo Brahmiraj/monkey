@@ -55,23 +55,29 @@ const Contact = () => {
               <JackInTheBox delay={1500} triggerOnce>
                 <div>
                   <input
-                    className="shadow appearance-none border rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline bg-transparent w-80 "
+                    className="shadow appearance-none border rounded xl:py-5 py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline bg-transparent w-80 "
                     id="username"
                     type="text"
                     placeholder="Your email address"
                   />
                 </div>
               </JackInTheBox>
-              <JackInTheBox delay={1500} triggerOnce className="w-96">
-                <div className="z-0 flex justify-center items-center hide-on-mobile">
+              {/* <JackInTheBox delay={1500} triggerOnce className="w-86">
+                <div className="z-0 flex justify-center items-center">
                   <img
                     src={signinBG}
                     alt="signinBG"
                     className="absolute h-20 -z-10 "
                   />
-                  <h1 className="pl-12 text-xl w-full NotoSerif  cursor-pointer	">
+                  <h1 className="pl-12 text-xl w-full NotoSerif  	">
                     Buy Now
                   </h1>
+                </div>
+              </JackInTheBox> */}
+
+              <JackInTheBox delay={1500} triggerOnce>
+                <div className="flex justify-center items-center pb-8 text-xl w-full NotoSerif cursor-pointer backgroundImageClass ">
+                  Buy Now
                 </div>
               </JackInTheBox>
             </div>
