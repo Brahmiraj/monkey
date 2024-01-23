@@ -57,7 +57,7 @@ const Play = () => {
   return (
     <div className="max-w-[1600px] mx-auto">
       <div className="flex max-xl:flex-col">
-        <div className="e w-1/2 max-xl:w-full flex justify-center items-center relative max-sm:left-52 left-60 hide-on-mobile">
+        <div className=" w-1/2 max-xl:w-full flex justify-center items-center relative max-sm:left-60 left-60">
           <img
             src={monkeyFrame}
             alt=""
